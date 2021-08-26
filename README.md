@@ -37,11 +37,11 @@ services:
 
 > Acessando seu IPv4 público vc terá as seguintes telas
 
-![home.PNG](https://github.com/leandrocotrim/nginx-docker/home.PNG)
+![home.PNG](https://github.com/leandrocotrim/nginx-docker/blob/main/home.PNG)            
 
-![page2.PNG](https://github.com/leandrocotrim/nginx-docker/page2.PNG)
+![page2.PNG](https://github.com/leandrocotrim/nginx-docker/blob/main/page2.PNG)
 
-![page3.PNG](https://github.com/leandrocotrim/nginx-docker/page3.PNG)
+![page3.PNG](https://github.com/leandrocotrim/nginx-docker/blob/main/page3.PNG)
 
 ## Observações
 
