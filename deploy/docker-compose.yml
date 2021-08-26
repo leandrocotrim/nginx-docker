@@ -1,8 +1,10 @@
 version: '3'
 
 services:  
-  nginx_service:
-    image: nginx:1.17.6-alpine
-    container_name: nginx_container
+  nginx_service: # nome do serviço
+    image: nginx:1.21.1-alpine # nome da imagem
+    volumes:    
+      - ./volume_html:/usr/share/nginx/html # copia a pasta para dentro do container
+    container_name: nginx_container # nome do container
     ports:
-      - "8000:80"
+      - "443:80" # porta espelhada para a 443 do host
