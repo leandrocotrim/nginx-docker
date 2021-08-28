@@ -1,10 +1,29 @@
 version: '3'
 
-services:  
+services:
+
   nginx_service: # nome do serviço
     image: nginx:1.21.1-alpine # nome da imagem
     volumes:    
       - ./volume_html:/usr/share/nginx/html # copia a pasta para dentro do container
+      - ./volume_service/default.conf:/etc/nginx/conf.d/default.conf # copia arquivo de configuração para o container
     container_name: nginx_container # nome do container
     ports:
       - "443:80" # porta espelhada para a 443 do host
+
+  nginx_service2:
+    image: nginx:1.21.1-alpine
+    volumes:    
+      - ./volume_service/index_service2.html:/usr/share/nginx/html/index.html # copia o arquivo para o container
+    container_name: nginx_container2
+    ports:
+      - "80" # não espelha porta no host
+
+  nginx_service3:
+    image: nginx:1.21.1-alpine
+    volumes:    
+      - ./volume_service/index_service3.html:/usr/share/nginx/html/index.html # copia o arquivo para o container
+    container_name: nginx_container3
+    ports:
+      - "80" # não espelha porta no host
+   
