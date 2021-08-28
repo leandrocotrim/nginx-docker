@@ -134,8 +134,9 @@ volumes:
   <li><a href="/index.html">Home</a></li>
 ```
 Pronto, suba os arquivos para o EC2
+- A Home mudou, agora é `ipv4:443/index.html`
 - Acessando a página incial termos um novo link adicionado
-- Ao Clicar nele será exibido uma mensagem "HTML Node - Service 2" ou "HTML Node - Service 3", ao atualizar fica variando de um serviço para o outro, caso não funcione, aperte `ctrl+shit+r`.
+- Ao Clicar nele será exibido uma mensagem "HTML Node - Service 2" ou "HTML Node - Service 3", ao atualizar fica variando de um serviço para o outro, caso não funcione, aperte `ctrl+shit+r`
 
 ## Observações
 - Os volumes encontram-se nas pastas `volume_html` e `volume_service`
